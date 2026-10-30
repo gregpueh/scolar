@@ -1,3 +1,4 @@
+["sage","lilac","blue","orange","rose","teal","coral","berry"].forEach(c=>{const i=new Image();i.src="assets/Scholar_"+c+"_plus.png";});
 document.querySelectorAll('[data-color]').forEach(button => { button.addEventListener('click', () => { document.querySelectorAll('[data-color]').forEach(other => other.setAttribute('aria-pressed', String(other === button))); document.querySelector('.plus-section').dataset.palette = button.dataset.color; document.querySelector('.plus-logo').src = 'assets/Scholar_' + button.dataset.color + '_plus.png'; }); });
 document.querySelectorAll('[data-phone-tab]').forEach(button => button.addEventListener('click', () => { document.querySelectorAll('[data-phone-tab]').forEach(tab => tab.setAttribute('aria-pressed', String(tab === button))); document.querySelectorAll('[data-phone-view]').forEach(view => view.hidden = view.dataset.phoneView !== button.dataset.phoneTab); }));
 // Transform animation avoids rounded scrollLeft values at low speeds.
