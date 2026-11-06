@@ -1,0 +1,1 @@
+const SCHOLAR_MOD_CONFIG={"url": "https://dqeplmggkxxmpqdggxlz.supabase.co", "key": "sb_publishable_ZWvg57GFZe575J3vbeJIFg_COT-XU58"};
