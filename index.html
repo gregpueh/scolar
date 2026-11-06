@@ -49,4 +49,4 @@
  days.innerHTML=Array.from({length:offset},()=>'<span></span>').join('')+Array.from({length:count},(_,n)=>'<span class="'+(n+1===now.getDate()?'is-today':(n+1)%7===3?'has-demo-event':'')+'">'+(n+1)+'</span>').join('');
  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;schedule();},{threshold:.15}).observe(phone);document.addEventListener('visibilitychange',schedule);motion.addEventListener('change',()=>{paused=motion.matches;if(pause){pause.setAttribute('aria-pressed',String(paused));pause.textContent=paused?'Vorschau abspielen':'Vorschau pausieren';}show(index);});show(0);
 })();
-</script></body></html>
+</script><script src="assets/analytics.js?v=20261106" defer></script></body></html>
